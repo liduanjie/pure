@@ -1,7 +1,10 @@
 @imoprt "reset"
 @import "public"
 
-
+.class1 {
+	width: 100px;
+	height: 100px;
+}
 
 .store-item {
 	padding: 10px;
@@ -12,5 +15,3 @@
 			height: 32px;
 		}
 }
-
-	

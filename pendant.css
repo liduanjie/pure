@@ -1,13 +1,14 @@
 @imoprt "reset"
 @import "public"
 
-
-
+.class1 {
+  width: 100px;
+  height: 100px; }
 .store-item {
-  padding: 10px;
-  a > img {
+  padding: 10px; }
+  .store-item a > img {
     border-radius: 50%;
     width: 32px;
-    height: 32px; } }
+    height: 32px; }
 
 /*# sourceMappingURL=pendant.css.map */
