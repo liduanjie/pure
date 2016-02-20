@@ -1,16 +1,85 @@
-@imoprt "reset"
-@import "public"
+@import 'public.scss';
 
-
-
-.store-item {
-	padding: 10px;
-
-		a > img {
-			border-radius: 50%;
-			width: 32px;
-			height: 32px;
-		}
+$primary-color: #ddd;
+$color-black: #999;
+.font-16 {
+	font-size: 16px;
 }
 
+/* 套件 */
+%size1 {
+	width: 32px;
+	height: 32px;
+}
+
+.comp0 {
+	.store-item {
+		padding: 10px;
+
+			a > img {
+				border-radius: 50%;
+				@extend %size1;
+			}
+	}
+
+	.store-item > span{
+		display: block;
+		color: $color-black;
+	}
+
+	.store-item > a > img {
+		boder-radius: 50%;
+	}
+}
+
+.comp1 {
+	.comp1-r {
+		@extend .border-r;
+	}
+}
+
+
+
+.comp2 {
+	background-color: #fff;
+		.comp2-r {
+			height: 188px;
+		}
+}
 	
+.comp3 {
+	.comp3-item {
+		background-color: #fff;
+		paddign: 2px;
+		margin-bottom: 2px;
+	}
+
+	> div > div:nth-child(odd) .comp3-item {
+		margin-right: 1px;
+	}
+	
+	> div > div:nth-child(even) .comp3-item {
+		margin-right: 1px;
+	}
+
+	.comp3-item .intro {
+		font-size: 14px;
+		color: $color-black;
+
+		> .title {
+			color: $color-black;
+
+			display: block;
+			height: 28px;
+			line-height: 14px;
+			overflow: hidden;
+			margin-bottom: 3px;
+		}
+
+		> .info > span > em {
+			@extend .font-16;
+			font-style: normal;
+		}
+	}
+}
+

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>this is texting for the pure</title>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+	<link rel="stylesheet" href="pendant.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<style>
+		/**	
+		 * <-- 1 -->inside it that is a component
+		 */
+
+		/*额外组件：可以在一个符合组件里面加上padding，border，或者文字分隔的组件*/
+
+		.inline-b {
+			display:inline-block;
+		}
+		
+		.mg-b-9 {
+			margin-bottom: 9px;
+		}
+
+		.border-r {
+			border-right: 1px solid #eee;
+		}
+
+		.border-b {
+			border-bottom: 1px solid #eee;
+		}
+
+		.border-t {
+			border-top: 1px solid #eee;
+		}
+
+		.text-center {
+			text-align: center;
+		}
+
+
+		.comp0 {
+			background-color: #fff;
+		}
+		.store-item {
+			padding: 10px;
+		}
+		.store-item > span {
+			display: block;
+			color: #999;
+		}
+		.store-item > a > img{
+			border-radius:50%;
+			width:40px;
+			height:40px;
+		}
+
+
+		/*comp1*/
+
+		.comp1 {
+			border:1px solid #eee;
+			background-color:#fff;
+			border-left:0px;
+			border-right: 0px;
+			/*margin-bottom: 9px;*/
+		}
+		.comp1-r {
+			border-right: 1px solid #eee;
+			height: 188px;
+		}
+		.comp2-r {
+			height: 188px;
+		}
+
+		/*comp1*/
+
+		/*comp2*/
+		.comp2 {
+			background-color: #fff;
+			border:1px solid #eee;
+			border-left: 0px;
+			border-right: 0px;
+			/*margin-bottom: 9px;*/
+		}
+
+		/*comp2*/
+
+		/*comp3*/
+		.comp3{
+		}
+
+		.comp3-item {
+			background-color:#fff;
+			padding: 2px;
+			margin-bottom: 2px;
+		}
+
+		.comp3 > div > div:nth-child(odd) .comp3-item{
+			margin-right: 1px;
+		}
+
+		.comp3 > div > div:nth-child(even) .comp3-item{
+			margin-left: 1px;
+		}
+
+		.comp3-item .intro {
+			font-size: 14px;
+			color: #bbb;
+			padding:10px;
+			display:block;
+		}
+
+		.comp3-item .intro > .title {
+			display: block;
+			color: #000;
+		    height: 28px;
+		    line-height: 14px;
+		    overflow: hidden;
+		    margin-bottom: 3px;
+		}
+
+		.comp3-item .intro > .info {
+			position:relative;
+			display: block;
+			color: red;
+		}
+
+		.comp3-item .intro > .info > span > em {
+			font-style: normal;
+			font-size: 16px;
+			/*font-size: 2em;*/
+			font-weight: bold;
+		}
+
+		/*comp3*/
+
+
+		/*comp4*/
+		.comp4 {
+			background-color: #fff;
+		}
+
+		.comp4 > div > div > div {
+			border-right: 1px solid #eee;
+		}
+		/*comp4*/
+
+
+		/*comp5*/
+		.comp5 {
+			background-color: #fff;
+		}
+		.comp5 > div {
+			/*border-bottom: 1px solid #eee;*/
+		}
+		.comp5 > div > div > div > div {
+			border-right: 1px solid #eee;
+		}
+		/*comp5*/
+
+
+		/*component*/
+		.cus-divider {
+			width: 100%;
+			border-top: 1px solid red;
+			/*margin: 1em 0.5em;*/
+			margin: 10px 0;
+		}
+
+		.bg-format-cover{
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+		}
+
+		.bg-format-auto {
+			background-repeat: no-repeat;
+			background-size: auto 80%;
+			background-position: center center;
+		}
+
+		.bg-format-100 {
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-position: center center;
+		}
+
+		body {
+			background-color: #f0f0f0;
+		}
+
+		*{
+			font-size: 12px
+		}
+
+		.clearfix:before {
+			content: '';
+			clear:both;
+		}
+
+		.clearfix:after {
+			visibility: hidden; 
+			display: block; 
+			font-size: 0; 
+			content: " "; 
+			clear: both; 
+			height: 0;
+		}
+
+		.pull-left{
+			float :left;
+		}
+
+		.pull-right {
+			float: right;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="comp0 mg-b-9">
+		<div class="pure-g">
+			<!-- 1 -->
+			<div class="pure-u-1-4 text-center">
+				<div class="store-item">
+					<a class="text-center" style="display:block" href="">
+						<img src="list.png" alt="">
+					</a>
+					<span>天猫</span>
+				</div>
+			</div> 
+			<!-- 1 -->
+
+			<!-- 2 -->
+			<div class="pure-u-1-4 text-center">
+				<div class="store-item">
+					<a class="text-center" style="display:block">
+						<img src="cart.png" alt="">
+					</a>
+					<span>天猫国际</span>
+				</div>
+			</div>  
+			<!-- 2 -->
+
+			<!-- 3 -->
+			<div class="pure-u-1-4 text-center">
+				<div class="store-item">
+					<a class="text-center" style="display:block">
+						<img src="store.png" alt="">
+					</a>
+					<span>天猫</span>
+				</div>
+			</div>  
+			<!-- 3 -->
+
+			<!-- 4 -->
+			<div class="pure-u-1-4 text-center">
+				<div class="store-item">
+					<a class="text-center inline-b">
+						<img src="store.png" alt="">
+					</a>
+					<span>天猫</span>
+				</div>
+			</div> 	
+			<!-- 4 -->
+
+		</div>
+	</div>
+
+	<!-- layout1 -->
+	<div class="comp1 mg-b-9">
+		<div class="pure-g"> 
+			<!-- 1 -->
+			<div class="pure-u-2-5">
+				<div class="comp1-r">
+					<a href="" style="background-image:url('demo3.png');display:block;height:100%;" class="bg-format-auto"></a>
+				</div>
+			</div>
+			<!-- 2 -->
+			<div class="pure-u-3-5">
+				<div class="pure-g">
+					<div class="pure-u-1">
+						<div class="border-b">
+							<a style="background-image:url(demo2.png);height: 90px;width:100%;display:block" class="bg-format-auto" ></a>
+						</div>
+					</div>
+				</div>
+				<div class="pure-g">
+					<div class="pure-u-1-2">
+						<div class="border-r">	
+							<a style="background-image:url('demo6.png');height: 90px;width: 100%;display:block" class="bg-format-auto"></a>
+						</div>
+					</div>
+					<div class="pure-u-1-2">
+						<div>
+							<a style="background-image:url(demo5.png);height: 90px;width: 100%;display:block" class="bg-format-auto"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- layout1 -->
+
+
+	<!-- layout2 -->
+
+	<div class="comp2 mg-b-9">
+		<div class="pure-g">
+			<!-- 1 -->
+			<div class="pure-u-2-5">
+				<div class="border-r comp2-r">
+					<a href="" style="background-image:url('demo7.png');height:100%;display:block" class="bg-format-auto"></a>
+				</div>
+			</div>
+			<!-- 1 -->
+
+			<!-- 2 -->
+			<div class="pure-u-3-5">
+				<div class="pure-g">
+					<div class="pure-u-1">
+						<div class="border-b">
+							<div class="bg-format-auto" style="background-image:url('demo8.png');height:90px;display:block"></div>
+						</div>
+					</div>
+					<div class="pure-u-1">
+						<div>
+							<a href="" class="bg-format-auto" style="background-image:url('demo9.png');height:90px;display:block"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 2 -->
+		</div>
+	</div>
+
+	<!-- layout2 -->
+
+
+	<!-- layout3 -->
+
+	<div class="comp3">
+		<div class="pure-g">
+			<!-- 1 -->
+			<div class="pure-u-1-2">
+				<div class="comp3-item">
+					<a href="http://www.baidu.com" style="background-image:url(demo10.png);height: 160px;display:block" class="bg-format-100"></a>
+					<span class="intro clearfix">
+						<span href="idfoidso" class="title">随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的</span>
+						<span class="info clearfix">
+							<span class="pull-left">￥<em>68.00</em></span>
+							<a class="pull-right">
+								<!-- <img src="http://placehold.it/200x200" style="width:24px;height: 24px;" alt=""> -->
+								<i class="fa fa-shopping-cart" style="font-size:22px;"></i>
+							</a>
+						</span>
+					</span>
+				</div>
+			</div>
+			<!-- 1 -->
+
+			<!-- 2 -->
+			<div class="pure-u-1-2">
+				<div class="comp3-item">
+					<a href="http://www.baidu.com" style="background-image:url(demo10.png);height: 160px;display:block" class="bg-format-100"></a>
+					<span class="intro clearfix">
+						<span href="idfoidso" class="title">随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的</span>
+						<span class="info clearfix">
+							<span class="pull-left">￥<em>68.00</em></span>
+							<a class="pull-right">
+								<!-- <img src="http://placehold.it/200x200" style="width:24px;height: 24px;" alt=""> -->
+								<i class="fa fa-shopping-cart" style="font-size:22px;"></i>
+							</a>
+						</span>
+					</span>
+				</div>
+			</div>
+			<!-- 2 -->
+		</div>
+
+		<div class="pure-g">
+			<!-- 1 -->
+			<div class="pure-u-1-2">
+				<div class="comp3-item">
+					<a href="http://www.baidu.com" style="background-image:url(demo10.png);height: 160px;display:block" class="bg-format-100"></a>
+					<span class="intro clearfix">
+						<span href="idfoidso" class="title">随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的</span>
+						<span class="info clearfix">
+							<span class="pull-left">￥<em>68.00</em></span>
+							<a class="pull-right">
+								<!-- <img src="http://placehold.it/200x200" style="width:24px;height: 24px;" alt=""> -->
+								<i class="fa fa-shopping-cart" style="font-size:22px;"></i>
+							</a>
+						</span>
+					</span>
+				</div>
+			</div>
+			<!-- 1 -->
+
+			<!-- 2 -->
+			<div class="pure-u-1-2">
+				<div class="comp3-item">
+					<a href="http://www.baidu.com" style="background-image:url(demo10.png);height: 160px;display:block" class="bg-format-100"></a>
+					<span class="intro clearfix">
+						<span href="idfoidso" class="title">随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的随碟附送的</span>
+						<span class="info clearfix">
+							<span class="pull-left">￥<em>68.00</em></span>
+							<a class="pull-right">
+								<!-- <img src="http://placehold.it/200x200" style="width:24px;height: 24px;" alt=""> -->
+								<i class="fa fa-shopping-cart" style="font-size:22px;"></i>
+							</a>
+						</span>
+					</span>
+				</div>
+			</div>
+			<!-- 2 -->
+		</div>
+	</div>
+
+	<!-- layout3 -->
+
+
+	<!-- layout4 -->
+	<div>
+		<!-- 1 -->
+		<div class="comp4 border-b border-t">
+			<div class="pure-g">
+				<div class="pure-u-2-5">
+					<div>
+						<a href="" style="background-image:url('demo11.png');display:block;height:140px;" class="bg-format-auto"></a>
+					</div>
+				</div>
+				<div class="pure-u-1-5">
+					<div>
+						<a href="" style="background-image:url('demo8.png');display:block;height:140px;" class="bg-format-100"></a>
+					</div>
+				</div>
+				<div class="pure-u-1-5">
+					<div>
+						<a href="" style="background-image:url('demo8.png');display:block;height:140px;" class="bg-format-100"></a>
+					</div>
+				</div>
+				<div class="pure-u-1-5">
+					<div>
+						<a href="" style="background-image:url('demo8.png');display:block;height:140px;" class="bg-format-100"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 1 -->
+
+		<!-- 2 -->
+		<div class="comp4 border-b">
+			<div class="pure-g">
+				<div class="pure-u-2-5">
+					<div>
+						<a href="" style="background-image:url('demo11.png');display:block;height:140px;" class="bg-format-auto"></a>
+					</div>
+				</div>
+				<div class="pure-u-1-5">
+					<div>
+						<a href="" style="background-image:url('demo8.png');display:block;height:140px;" class="bg-format-100"></a>
+					</div>
+				</div>
+				<div class="pure-u-1-5">
+					<div>
+						<a href="" style="background-image:url('demo8.png');display:block;height:140px;" class="bg-format-100"></a>
+					</div>
+				</div>
+				<div class="pure-u-1-5">
+					<div>
+						<a href="" style="background-image:url('demo8.png');display:block;height:140px;" class="bg-format-100"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 2 -->
+	</div>
+	
+
+	<!-- layout4 -->
+
+	<!-- layout5 -->
+	<div class="comp5 mg-b-9">
+		<div class="border-b">
+			<div class="pure-g">
+				<div class="pure-u-1-4">
+					<div>
+						<a href="" style="background-image:url('demo8.png');display:block;height:140px;" class="bg-format-100"></a>
+					</div>
+				</div>
+				<div class="pure-u-1-4">
+					<div>
+						<a href="" style="background-image:url('demo8.png');display:block;height:140px;" class="bg-format-100"></a>
+					</div>
+				</div>
+				<div class="pure-u-1-4">
+					<div>
+						<a href="" style="background-image:url('demo8.png');display:block;height:140px;" class="bg-format-100"></a>
+					</div>
+				</div>
+				<div class="pure-u-1-4">
+					<div>
+						<a href="" style="background-image:url('demo8.png');display:block;height:140px;" class="bg-format-100"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="border-b">
+			<div class="pure-g">
+				<div class="pure-u-1-4">
+					<div>
+						<a href="" style="background-image:url('demo8.png');display:block;height:140px;" class="bg-format-100"></a>
+					</div>
+				</div>
+				<div class="pure-u-1-4">
+					<div>
+						<a href="" style="background-image:url('demo8.png');display:block;height:140px;" class="bg-format-100"></a>
+					</div>
+				</div>
+				<div class="pure-u-1-4">
+					<div>
+						<a href="" style="background-image:url('demo8.png');display:block;height:140px;" class="bg-format-100"></a>
+					</div>
+				</div>
+				<div class="pure-u-1-4">
+					<div>
+						<a href="" style="background-image:url('demo8.png');display:block;height:140px;" class="bg-format-100"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
