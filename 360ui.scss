@@ -1,0 +1,104 @@
+@import 'reset';
+
+//public
+
+
+//reset
+
+
+
+//变量
+
+$baseFontSize: 12px;
+$baseLineHeight: 20px;
+$baseFontColor: #666;
+$textColor: #333 #666 #bebebe #aaa;
+$fontSize: 9px 12px 14px 16px;
+$bgColor: #bebebe, #fff;
+
+
+//reset
+body {
+	font-size: $baseFontSize;
+	font-color: $baseFontColor;
+	background-color: nth($bgColor, 1);
+}
+
+h4 {
+	font-family: "Microsoft Yahei";
+	padding: 0px;
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+//componnet
+.pro1-comp1 {
+	background-color: #fff;
+
+	.nav-item {
+
+	}
+}
+
+.pro1-comp2 {
+	background-color: nth($bgColor, 2);
+	border: 1px solid #ccc;
+
+	.comp2-article {
+		padding: 10px 25px;
+
+		> h4 {
+			font-size: 18px;
+		}
+
+		> div > p {
+			line-height: $baseLineHeight;
+			color: nth($textColor, 2);
+		}
+
+		> p {
+			color: nth($textColor, 3);
+
+			> span > a {
+				color: nth($textColor, 3);
+				margin-right: 12px;
+			}
+		}
+	}
+
+	.comp2-media {
+		position: relative;
+
+		> a {
+			display: inline-block;
+			width:30px;
+			height: 30px;
+			position:absolute;
+			top:0px;
+			right:0px;
+			color: nth($textColor, 4);
+			height: 16px;
+			width: 16px;
+			line-height: 16px;
+
+			> i {
+				font-size: nth($fontSize, 3)
+			}
+		}
+
+		> div {
+			display:block;
+			margin:10px;
+			height:110px;
+			margin-right:25px;
+		}
+	}
+
+	&:hover {
+		box-shadow: 0 0 3px #ccc;
+	}
+}

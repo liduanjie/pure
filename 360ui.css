@@ -1,0 +1,56 @@
+body {
+  font-size: 12px;
+  font-color: #666;
+  background-color: #bebebe; }
+
+h4 {
+  font-family: "Microsoft Yahei";
+  padding: 0px;
+  margin: 0px; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+.pro1-comp1 {
+  background-color: #fff; }
+
+.pro1-comp2 {
+  background-color: #fff;
+  border: 1px solid #ccc; }
+  .pro1-comp2 .comp2-article {
+    padding: 10px 25px; }
+    .pro1-comp2 .comp2-article > h4 {
+      font-size: 18px; }
+    .pro1-comp2 .comp2-article > div > p {
+      line-height: 20px;
+      color: #666; }
+    .pro1-comp2 .comp2-article > p {
+      color: #bebebe; }
+      .pro1-comp2 .comp2-article > p > span > a {
+        color: #bebebe;
+        margin-right: 12px; }
+  .pro1-comp2 .comp2-media {
+    position: relative; }
+    .pro1-comp2 .comp2-media > a {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      color: #aaa;
+      height: 16px;
+      width: 16px;
+      line-height: 16px; }
+      .pro1-comp2 .comp2-media > a > i {
+        font-size: 14px; }
+    .pro1-comp2 .comp2-media > div {
+      display: block;
+      margin: 10px;
+      height: 110px;
+      margin-right: 25px; }
+  .pro1-comp2:hover {
+    box-shadow: 0 0 3px #ccc; }
+
+/*# sourceMappingURL=360ui.css.map */
