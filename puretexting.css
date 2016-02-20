@@ -1,0 +1,311 @@
+/*reset*/
+
+
+body {
+	background-color: #f0f0f0;
+}
+
+*{
+	font-size: 12px;
+}
+
+/**	
+ * <-- 1 -->inside it that is a component
+ * common
+ */
+
+/*额外组件：可以在一个符合组件里面加上padding，border，或者文字分隔的组件*/
+
+.cus-divider {
+	width: 100%;
+	border-top: 1px solid red;
+	/*margin: 1em 0.5em;*/
+	margin: 10px 0;
+}
+
+.bg-format-cover{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.bg-format-auto {
+	background-repeat: no-repeat;
+	background-size: auto 80%;
+	background-position: center center;
+}
+
+.bg-format-100 {
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center center;
+}
+
+.inline-b {
+	display:inline-block;
+}
+
+/*组件之间的margin*/
+.mg-b-9 {
+	margin-bottom: 9px;
+}
+
+/*组件的border*/
+.border-r {
+	border-right: 1px solid #eee;
+}
+
+.border-b {
+	border-bottom: 1px solid #eee;
+}
+
+.border-t {
+	border-top: 1px solid #eee;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.clearfix:before {
+	content: '';
+	clear:both;
+}
+
+.clearfix:after {
+	visibility: hidden; 
+	display: block; 
+	font-size: 0; 
+	content: " "; 
+	clear: both; 
+	height: 0;
+}
+
+.pull-left{
+	float :left;
+}
+
+.pull-right {
+	float: right;
+}
+
+
+/*comp0*/
+
+ nav {
+	background-color: #fff;
+}
+
+nav .store-item {
+	padding: 10px;
+}
+
+nav .store-item > span {
+	display: block;
+	color: #999;
+}
+
+nav .store-item > a {
+	display: block;
+}
+
+nav .store-item > a > img{
+	border-radius:50%;
+	width:40px;
+	height:40px;
+}
+
+/*comp0*/
+
+
+/*comp1*/
+
+.component-1 {
+	background-color: #fff;
+	/*margin-bottom: 9px;*/
+}
+
+.component-1 .comp1-size1 {
+	height: 90px;
+	width: 100%;
+	display:block
+}
+
+.component-1 .comp1-r {
+	border-right: 1px solid #eee;
+	height: 188px;
+}
+
+.component-1 .comp1-r > a {
+	display:block;
+	height:100%;
+}
+
+/*comp1*/
+
+
+/*comp2*/
+
+.component-2 {
+	background-color: #fff;
+	border:1px solid #eee;
+	border-left: 0px;
+	border-right: 0px;
+	/*margin-bottom: 9px;*/
+}
+
+.component-2 .comp2-r {
+	height: 188px;
+}
+
+.component-2 .comp2-r > a {
+	height:100%;
+	display:block;
+}
+
+.component-2 .comp2-size1 {
+	height:90px;
+	display:block
+}
+/*comp2*/
+
+
+/*comp3*/
+
+.component-3 {
+}
+
+.component-3 .comp3-item {
+	background-color:#fff;
+	padding: 2px;
+	margin-bottom: 2px;
+}
+
+.component-3 .comp3-item > a {
+	height: 160px;
+	display:block;
+}
+
+.component-3 > div > div:nth-child(odd) .comp3-item{
+	margin-right: 1px;
+}
+
+.component-3 > div > div:nth-child(even) .comp3-item{
+	margin-left: 1px;
+}
+
+.component-3 .comp3-item .intro {
+	font-size: 14px;
+	color: #bbb;
+	padding:10px;
+	display:block;
+}
+
+.component-3 .comp3-item .intro > .title {
+	display: block;
+	color: #000;
+    height: 28px;
+    line-height: 14px;
+    overflow: hidden;
+    margin-bottom: 3px;
+}
+
+.component-3 .comp3-item .intro > .info {
+	position:relative;
+	display: block;
+	color: red;
+}
+
+.comp3-item .intro > .info > span > em {
+	font-style: normal;
+	font-size: 16px;
+	/*font-size: 2em;*/
+	font-weight: bold;
+}
+
+.comp3-item .intro > .info > a > i {
+	font-size:22px;
+}
+
+/*comp3*/
+
+
+/*comp4*/
+
+.component-4 {
+
+}
+
+.component-4 .comp4-size1 {
+	display:block;
+	height:140px;
+}
+
+.component-4 .comp4 {
+	background-color: #fff;
+}
+
+.component-4 .comp4 > div > div > div {
+	border-right: 1px solid #eee;
+}
+/*comp4*/
+
+
+/*comp5*/
+
+.component-5 {
+	background-color: #fff;
+}
+
+.component-5 .comp5-size1 {
+	display:block;
+	height:140px;
+}
+
+.component-5  > div {
+	/*border-bottom: 1px solid #eee;*/
+}
+
+.component-5 > div > div > div > div {
+	border-right: 1px solid #eee;
+}
+
+/*comp5*/
+
+/*comp6*/
+
+.component-6 {
+	background-color: #fff;
+}
+
+.component-6 .comp6-size1 {
+	display:block;
+	height:180px;
+}
+/*comp6*/
+
+
+/*title divider */
+	
+.component-divider {
+	height:40px;
+	display:block;
+	margin-bottom:9px;
+	line-height:40px;
+	text-align:center
+}
+
+.component-divider > .line1{
+	display: inline-block;
+	border-bottom: 1px solid #999;
+	width: 34px;
+	margin-bottom: 3px;
+}
+
+.component-divider > img {
+	width:100px;
+	height:30px;
+	vertical-align:middle;
+}
+
+/*title divider 

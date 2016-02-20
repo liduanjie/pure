@@ -1,6 +1,10 @@
-@imoprt "reset"
-@import "public"
+@charset "UTF-8";
+a {
+  color: #08c; }
+  a:hover {
+    color: #333; }
 
+<<<<<<< HEAD
 .class1 {
   width: 100px;
   height: 100px; }
@@ -10,5 +14,72 @@
     border-radius: 50%;
     width: 32px;
     height: 32px; }
+=======
+.inline-b {
+  display: inline-block; }
+
+.mg-b-9 {
+  margin-bottom: 9px; }
+
+.border-r, .comp1 .comp1-r {
+  border-bottom: 1px solid #eee; }
+
+.border-b {
+  border-bottom: 1px solid #eee; }
+
+.border-t {
+  border-top: 1px solid #eee; }
+
+.border-l {
+  border-right: 1px solid #eee; }
+
+.text-align {
+  text-align: center; }
+
+/* link color */
+.font-16, .comp3 .comp3-item .intro > .info > span > em {
+  font-size: 16px; }
+
+/* 濂椾欢 */
+.comp0 .store-item a > img {
+  width: 32px;
+  height: 32px; }
+
+.comp0 .store-item {
+  padding: 10px; }
+  .comp0 .store-item a > img {
+    border-radius: 50%; }
+.comp0 .store-item > span {
+  display: block;
+  color: #999; }
+.comp0 .store-item > a > img {
+  boder-radius: 50%; }
+
+.comp2 {
+  background-color: #fff; }
+  .comp2 .comp2-r {
+    height: 188px; }
+
+.comp3 .comp3-item {
+  background-color: #fff;
+  paddign: 2px;
+  margin-bottom: 2px; }
+.comp3 > div > div:nth-child(odd) .comp3-item {
+  margin-right: 1px; }
+.comp3 > div > div:nth-child(even) .comp3-item {
+  margin-right: 1px; }
+.comp3 .comp3-item .intro {
+  font-size: 14px;
+  color: #999; }
+  .comp3 .comp3-item .intro > .title {
+    color: #999;
+    display: block;
+    height: 28px;
+    line-height: 14px;
+    overflow: hidden;
+    margin-bottom: 3px; }
+  .comp3 .comp3-item .intro > .info > span > em {
+    font-style: normal; }
+>>>>>>> 123439bb986b4f199919b8f51f3e929b44761057
 
 /*# sourceMappingURL=pendant.css.map */
