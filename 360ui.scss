@@ -14,7 +14,7 @@ $baseLineHeight: 20px;
 $baseFontColor: #666;
 $textColor: #333 #666 #bebebe #aaa;
 $fontSize: 9px 12px 14px 16px;
-$bgColor: #bebebe, #fff;
+$bgColor: #bebebe #fff;
 
 
 //reset
@@ -101,4 +101,15 @@ a {
 	&:hover {
 		box-shadow: 0 0 3px #ccc;
 	}
+}
+
+.pro1-main {
+	.module-1 {
+		background-color: nth($bgColor, 2);
+		font-size: nth($fontSize, 2);
+	}
+}
+
+.pro1-comp3 {
+	
 }

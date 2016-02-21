@@ -1,0 +1,168 @@
+/**
+ * author: liduanjie
+ * function: ui
+ * line reference: https://www.metro.net/#
+ */
+/**
+ * standard documemt
+ * this is the document for ui.
+ * and this document will summery something standard code 
+ * or other common or other , will build a standard library
+ * this ui use html5 element , and is senminal.
+ */
+.contentMainArticle .tabbedContent > section > h1:first-child, .contentMainArticle .tabbedContent > section > h2:first-child, .contentMainArticle .tabbedContent > section > h3:first-child, .contentMainArticle .tabbedContent > section > h4:first-child, .contentMainArticle .tabbedContent > section > table:first-child, .contentMainArticle .tabbedContent > section > ul:first-child, .contentMainArticle .tabbedContent > section > p:first-child, .contentMainArticle .tabbedContent > section > ol:first-child, .contentMainArticle .tabbedContent > section:first-child {
+  margin-top: 0px; }
+
+html, button, input, select, textarea {
+  color: #222; }
+
+html, button, input, select, textarea {
+  fong-size: 100%; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+body {
+  font: 13px/1.5em Verdana, Geneva, sans-serif;
+  background: #E8E8E8; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+article, aside, footer, header, hgroup, main, nav, section {
+  display: block; }
+
+article h2 {
+  font-weight: 700;
+  line-height: 23px;
+  border-bottom: 2px solid #000;
+  padding: 20px 0 3px 0;
+  margin-top: 20px; }
+
+h2 {
+  padding: .83em 0; }
+
+.nav, .tabs ul, .menu ul, div[class^="widget"] ul, .banner ul {
+  margin: 0;
+  padding: 0; }
+
+.tabs li, .menu li, .widgetAdvisories li, .banner li, div[class^="widget"] li {
+  list-style: none;
+  list-style-image: none; }
+
+.clearfix:after, #quick-links:after, .cf:after, article .tabs:after {
+  clear: both; }
+
+article li, article ol {
+  line-height: 1.6em;
+  padding-bottom: 5px;
+  list-style: disc outside url(""); }
+
+.gettingAround .tabbedListing .listTabs li.selected span, .gettingAround .accordion > h3, .gettingAround .widgetFilter ul li a:hover, .gettingAround div.widget-Grey h1 {
+  background: #A1DAF6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#BAE5F9), to(#86CFF3));
+  background: -moz-linear-gradient(top, #BAE5F9, #86CFF3);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#BAE5F9', endColorstr='#86CFF3'); }
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: #0000ff; }
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  text-decoration: underline;
+  cursor: auto; }
+
+.meta {
+  font-size: 10px; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px; }
+
+article section img {
+  border: 1px #ccc solid; }
+
+img {
+  vertical-align: middle; }
+
+article section header img {
+  border: 0px transparent solid; }
+
+img[Attributes Style] {
+  width: 100px;
+  height: 100px; }
+
+.tabbedListing .tabs {
+  height: 28px; }
+  .tabbedListing .tabs .listTabs li.selected span {
+    color: #000; }
+  .tabbedListing .tabs .pad-left {
+    margin-left: 10px; }
+  .tabbedListing .tabs > ul > li {
+    float: left;
+    list-style: none;
+    margin-right: 5px;
+    padding: 0; }
+    .tabbedListing .tabs > ul > li > span {
+      display: block;
+      border: 1px solid #e8e8e8;
+      border-bottom: none;
+      font-family: "ff-scala-sans-web-n7", "ff-scale-sans-web", Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      background: -webkit-gradient(linear, left top, left bottom, from(#FEFEFE), to(#E8E8E8)); }
+  .tabbedListing .tabs article .tabs {
+    border-bottom: 1px solid #e8e8e8;
+    min-height: 27px; }
+.tabbedListing .tabbedContent {
+  padding: 0 0 0; }
+  .tabbedListing .tabbedContent a {
+    color: #0000ff; }
+  .tabbedListing .tabbedContent header {
+    background: -webkit-gradient(linear, left top, left bottom, from(#DFDFDF), to(#FFFFFF));
+    height: 40px;
+    position: relative;
+    position: relative;
+    margin: 0 0 20px 0; }
+    .tabbedListing .tabbedContent header img {
+      float: left; }
+  .tabbedListing .tabbedContent .tabbedContent-feed a {
+    color: #000; }
+  .tabbedListing .tabbedContent .tabbedContent-feed header .buttons.align-right .align-r {
+    float: right; }
+  .tabbedListing .tabbedContent .tabbedContent-feed header .button {
+    font-size: 11px;
+    padding: 0 10px;
+    margin-right: 20px;
+    margin-top: 10px; }
+  .tabbedListing .tabbedContent .tabbedContent-feed h1 {
+    margin: 0;
+    border-bottom: 0;
+    font-weight: 400;
+    padding: 0;
+    font-size: 20px; }
+  .tabbedListing .tabbedContent .tabbedContent-feed h2 {
+    margin: 0;
+    border-bottom: 0;
+    font-weight: 400;
+    padding: 0;
+    font-size: 20px; }
+  .tabbedListing .tabbedContent .tabbedContent-feed a {
+    color: #000; }
+  .tabbedListing .tabbedContent .media, .tabbedListing .tabbedContent .media .text {
+    overflow: hidden;
+    zoom: 1; }
+    .tabbedListing .tabbedContent .media a, .tabbedListing .tabbedContent .media .text a {
+      color: #000; }
+    .tabbedListing .tabbedContent .media .noBorder {
+      border: 0 !important; }
+.tabbedListing .show {
+  display: block; }
+
+/*# sourceMappingURL=metroui.css.map */

@@ -53,4 +53,8 @@ a {
   .pro1-comp2:hover {
     box-shadow: 0 0 3px #ccc; }
 
+.pro1-main .module-1 {
+  background-color: #fff;
+  font-size: 12px; }
+
 /*# sourceMappingURL=360ui.css.map */
